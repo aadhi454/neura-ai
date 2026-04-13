@@ -213,3 +213,5 @@ venv/
 *.db
 *.sqlite3
 .codex
+*.db-wal
+*.db-shm
