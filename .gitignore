@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Neura specific ignores
+venv/
+.env
+*.mp3
+*.ogg
+*.db
+*.sqlite3
+.codex

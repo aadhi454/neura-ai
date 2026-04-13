@@ -1,23 +1,10 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
-
-app = FastAPI()
-
-class UserInput(BaseModel):
-    message: str
-
-@app.get("/")
-def home():
-    return {"message": "Neura is alive 🚀"}
-
-@app.post("/chat")
-def chat(input: UserInput):
-    user_message = input.message
-
-    # simple response (for now)
-    if "exam" in user_message.lower():
-        reply = "Got it… want me to help you revise for 20 minutes?"
-    else:
-        reply = "I'm here… tell me what's up."
-
-    return {"reply": reply}
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+openai
+python-multipart
+gTTS
+pydub
+faster-whisper
+numpy
